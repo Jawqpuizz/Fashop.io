@@ -94,14 +94,16 @@
 
                <!--Sigup form in the left side-->
                   <div class="offset-2"> <!--offset = margin-left-->
+
+                     <form action="index.html">
                      <div class="text-center">
                         <h1>Sign Up</h1>
                      </div>
 
                      <div class="flex-column">
                      <p>I'm a</p>
-                     <div class="form-group">
-                         <select class="form-control" id="exampleFormControlSelect1">
+                     <div class="form-group ">
+                         <select class="form-control box-shadow" id="exampleFormControlSelect1">
                          <option>Fashionista</option>
                          <option>Consultant</option>
                          <option>Manufacturer</option>   
@@ -110,28 +112,33 @@
                   </div>
                   </div>
 
-                     <form action="index.html">
                         <div class="form-group">
                            <label class="mb-1">Email or Phone</label>
                            <div class="position-relative icon-form-control">
                               <i class="mdi mdi-account position-absolute"></i>
-                              <input type="email" class="form-control">
+                              <input type="email" class="form-control box-shadow">
                            </div>
                         </div>
-                        <div class="form-group">
-                           <label class="mb-1">Password</label>
-                           <div class="position-relative icon-form-control">
-                              <i class="mdi mdi-key-variant position-absolute"></i>
-                              <input type="password" class="form-control">
-                           </div>
-                        </div>
+                       
                         <div class="custom-control custom-checkbox mb-3">
                            <input type="checkbox" class="custom-control-input" id="customCheck1">
-                           <label class="custom-control-label" for="customCheck1">Remember password</label>
+                           <div class="w-300" >
+                           <label class="custom-control-label" for="customCheck1 ">I agree to receive newa, Updates, and marketing offers, Read more in <a href="#">Privacy Notice</a></label>
+                           </div>
                         </div>
-                        <button class="btn btn-success btn-block text-uppercase" type="submit"> Sign in </button>
-                        <div class="text-center mt-3 border-bottom pb-3">
-                           <p class="small text-muted">Or login with</p>
+
+                        <div class="custom-control custom-checkbox mb-3">
+                           <input type="checkbox" class="custom-control-input" id="customCheck1">
+                           <div class="w-300" >
+                           <label class="custom-control-label" for="customCheck1 ">I have read and agree to <a href="#">Terms and conditions</a> and <a href="#">Privacy Policy</a></label>
+                           </div>
+                        </div>
+
+                        <div class="text-center mt-3 prime-line pb-3">
+                        <button class="btn btn-success btn-xs btn-radius" type="submit"> Register Now </button>
+                        </div>
+                        <div class="text-center mt-3 pb-3">
+                           <h5>Or Sign Up With</h5>
                            <div class="row">
                               <div class="col-6">
                                  <button type="button" class="btn btn-outline-instagram btn-block"><i class="mdi mdi-instagram"></i> Instagram</button>
@@ -141,9 +148,9 @@
                               </div>
                            </div>
                         </div>
-                        <div class="py-3 d-flex align-item-center">
-                           <a href="forgot-password.html">Forgot password?</a>
-                           <span class="ml-auto"> New to Fashop.io? <a href="register.html">Join now</a></span>
+                        <div class="py-3 d-flex align-items-center">
+                           <p>Already have an Fashionista account? <a href="#"> Log in</a></p>
+                          
                         </div>
                      </form>
 
