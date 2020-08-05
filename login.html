@@ -29,7 +29,7 @@
    	 <nav class="navbar navbar-expand-lg navbar-light topbar static-top shadow-sm osahan-nav-top px-0">
          <div class="container">
             <!-- Sidebar Toggle (Topbar) -->
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo_fashop.png" style="width: 90px; height: 70px;" alt=""></a>
+            <a class="navbar-brand nav-space" href="index.html"><img src="assets/images/logo_fashop.png" style="width: 90px; height: 70px;" alt=""></a>
 
              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -79,67 +79,174 @@
                   </li>
                </ul>
             </div>
-            
-   
-
-
 
          </div> <!--End Container class-->
      </nav>
 
       <!-- Login -->
-      <div class="bg-white">
-         <div class="container">
-            <div class="row justify-content-center align-items-center d-flex vh-100">
-               <div class="col-lg-4 mx-auto">
-                  <div class="osahan-login py-4">
-                     <div class="text-center ">
-                        <a  href="index.html"><img src="assets/images/logo_fashop.png" style="width: 100px; height: 100px;" alt=""></a>
-                        <h5 class="font-weight-bold mt-3">Welcome Back</h5>
-                        <p class="text-muted">Don't miss your next opportunity. Sign in to stay updated on your professional world.</p>
-                     </div>
-                     <form action="index.html">
-                        <div class="form-group">
-                           <label class="mb-1">Email or Phone</label>
-                           <div class="position-relative icon-form-control">
-                              <i class="mdi mdi-account position-absolute"></i>
-                              <input type="email" class="form-control">
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <label class="mb-1">Password</label>
-                           <div class="position-relative icon-form-control">
-                              <i class="mdi mdi-key-variant position-absolute"></i>
-                              <input type="password" class="form-control">
-                           </div>
-                        </div>
-                        <div class="custom-control custom-checkbox mb-3">
-                           <input type="checkbox" class="custom-control-input" id="customCheck1">
-                           <label class="custom-control-label" for="customCheck1">Remember password</label>
-                        </div>
-                        <button class="btn btn-success btn-block text-uppercase" type="submit"> Sign in </button>
-                        <div class="text-center mt-3 border-bottom pb-3">
-                           <p class="small text-muted">Or login with</p>
-                           <div class="row">
-                              <div class="col-6">
-                                 <button type="button" class="btn btn-outline-instagram btn-block"><i class="mdi mdi-instagram"></i> Instagram</button>
-                              </div>
-                              <div class="col-6">
-                                 <button type="button" class="btn btn-outline-facebook btn-block"><i class="mdi mdi-facebook"></i> Facebook</button>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="py-3 d-flex align-item-center">
-                           <a href="forgot-password.html">Forgot password?</a>
-                           <span class="ml-auto"> New to Fashop.io? <a href="register.html">Join now</a></span>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+      
+      <section class="py-5 homepage-search-block position-relative">
+      	<div class="container">
+      		<div class="row py-lg-5">
+      			<div class="col-lg-5">
+      				<img class="img-fluid" src="assets/images/faimages/title-image2.jpeg" alt='' />
+      			</div>
+
+      			<!--Sigup form in the left side-->
+      				<div class="offset-2"> <!--offset = margin-left-->
+      					<div class="text-center">
+      						<h1>Sign Up</h1>
+      					</div>
+
+      					<div class="flex-column">
+      					<p>I'm a</p>
+      					<div class="form-group">
+  								 <select class="form-control" id="exampleFormControlSelect1">
+     							 <option>Fashionista</option>
+     							 <option>Consultant</option>
+     							 <option>Manufacturer</option>	
+     							 <option>Supplier</option>				     
+   								 </select>
+ 						</div>
+ 						</div>
+
+      					<form action="index.html">
+      						<div class="form-group">
+      							<label class="mb-1">Email or Phone</label>
+      							<div class="position-relative icon-form-control">
+      								<i class="mdi mdi-account position-absolute"></i>
+      								<input type="email" class="form-control">
+      							</div>
+      						</div>
+      						<div class="form-group">
+      							<label class="mb-1">Password</label>
+      							<div class="position-relative icon-form-control">
+      								<i class="mdi mdi-key-variant position-absolute"></i>
+      								<input type="password" class="form-control">
+      							</div>
+      						</div>
+      						<div class="custom-control custom-checkbox mb-3">
+      							<input type="checkbox" class="custom-control-input" id="customCheck1">
+      							<label class="custom-control-label" for="customCheck1">Remember password</label>
+      						</div>
+      						<button class="btn btn-success btn-block text-uppercase" type="submit"> Sign in </button>
+      						<div class="text-center mt-3 border-bottom pb-3">
+      							<p class="small text-muted">Or login with</p>
+      							<div class="row">
+      								<div class="col-6">
+      									<button type="button" class="btn btn-outline-instagram btn-block"><i class="mdi mdi-instagram"></i> Instagram</button>
+      								</div>
+      								<div class="col-6">
+      									<button type="button" class="btn btn-outline-facebook btn-block"><i class="mdi mdi-facebook"></i> Facebook</button>
+      								</div>
+      							</div>
+      						</div>
+      						<div class="py-3 d-flex align-item-center">
+      							<a href="forgot-password.html">Forgot password?</a>
+      							<span class="ml-auto"> New to Fashop.io? <a href="register.html">Join now</a></span>
+      						</div>
+      					</form>
+
+      				</div>
+      			</div>
+
+
+      		</div>
+      	</div><!--end right-->
+      </section>
+     
       <!-- End Login -->
+
+
+        <!--   footer -->
+      <footer class="bg-primcolor-p">
+         <div class="container">
+
+            <div class=" d-flex">
+               <div class="footer-list">
+                  <h2>Company</h2>
+                  <ul class="list">
+                     <li><a href="#">About us</a></li>
+                     <li><a href="#">Privacy Policy</a></li>
+                     <li><a href="#">Cookie Policy</a></li>
+                     <li><a href="#">Terms &amp; Conditions</a></li>
+                     <li><a href="#">Refund policy</a></li>
+                  </ul>
+               </div>
+               <div class="footer-list">
+                  <h2>Resources</h2>
+                  <ul class="list">
+                  	<li><a href="#">Lorem ipsum</a></li>
+                  	<li><a href="#">Lorem ipsum</a></li>
+                  	<li><a href="#">Lorem ipsum</a></li>
+                  	<li><a href="#">Lorem ipsum</a></li>
+                  	<li><a href="#">Lorem ipsum</a></li>
+                    
+                  </ul>
+               </div>
+               <div class="footer-list">
+                  <h2>Services</h2>
+                  <ul class="list">
+                  	<li><a href="#">Lorem ipsum</a></li>
+                  	<li><a href="#">Lorem ipsum</a></li>
+                  	<li><a href="#">Lorem ipsum</a></li>
+                  	<li><a href="#">Lorem ipsum</a></li>
+                  	<li><a href="#">Lorem ipsum</a></li>
+                     
+                  </ul>
+               </div>
+               <div class="footer-list">
+                  <h2>Contact Us</h2>
+                  <ul class="list">
+                    <li><a href="#">Lorem ipsum</a></li>
+                  	<li><a href="#">Lorem ipsum</a></li>
+                  	<li><a href="#">Lorem ipsum</a></li>
+                  	<li><a href="#">Lorem ipsum</a></li>
+                  	<li><a href="#">Lorem ipsum</a></li>
+                     </li>
+                  </ul>
+               </div>     
+            </div>
+
+            <div class="copyright">
+               <div class="logo">
+                  <a href="index.html">
+                  <img src="assets/images/logo_fashop.png">
+                  </a>
+               </div>
+               <p>© Copyright 2020 Fashop.io All Rights Reserved
+               </p>
+               <ul class="social">
+               	  <li>
+                     <p style="padding-right: 10px">Follow us</p>
+                  </li>	
+                  <li>
+                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  </li>
+               </ul>
+            </div>
+
+         </div>
+      </footer>
+      <!--       footer-->
+   
+
+
+
+
+
       <!-- Bootstrap core JavaScript -->
       <script src="vendor/jquery/jquery.min.js"></script>
       <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
