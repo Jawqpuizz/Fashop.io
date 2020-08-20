@@ -5,6 +5,7 @@ const route = express.Router();
 // you will access this route when you hit method POST which we set in form 
                                         // this call function register in action file inside controller folder 
 route.post('/register',actionController.register);
+route.post('/login',actionController.login);
 
 
 // don't forget to export otherwise it won't render

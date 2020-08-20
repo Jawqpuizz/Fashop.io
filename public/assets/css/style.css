@@ -1,17 +1,62 @@
-import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;600;700;800;900&display=swap');
+
 
 
 @font-face {
-  font-family: 'Ultima';
-   /*src: url('myfont.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-   src: url('/font_Ultima/Ultima.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
-}  
+     font-family: "ultima_black";
+     src: url("Font_Ultima/ultima_black-webfont.woff") format("woff");
+ 
+ 
+ }
+ 
+ @font-face {
+ 
+     font-family: "Ultima_Bold_italic";
+     src: url("Font_Ultima/ultima_bold_italic-webfont.woff") format("woff");
+ 
+ }
+ 
+ 
+ @font-face {
+ 
+     font-family: "ultima_bold";
+     src: url("Font_Ultima/ultima_bold-webfont.woff") format("woff");
+ 
+ }
+ 
+ @font-face {
+ 
+     font-family: "ultima_italic";
+     src: url("Font_Ultima/ultima_italic-webfont.woff") format("woff");
+ 
+ }
+ 
+ @font-face {
+ 
+     font-family: "ultima_light_italic";
+     src: url("Font_Ultima/ultima_light_italic-webfont.woff") format("woff");
+ 
+ }
+ 
+ @font-face {
+ 
+     font-family: "ultima_light";
+     src: url("Font_Ultima/Ultima-Light.woff") format("woff");
+ 
+ }
+ 
+ @font-face {
+ 
+     font-family: "ultima";
+     src: url("Font_Ultima/ultima-webfont.woff") format("woff");
+ 
+ }
+
 /* Body */
 
  body {
      color: #222325;
      font-size: 13px;
-     font-family: 'Ultima', sans-serif;
+     font-family: 'ultima_light', sans-serif;
      font-weight: 400;
      background-color: #f0f2f5;
 }
@@ -98,7 +143,7 @@ import url('https://fonts.googleapis.com/css2?family=Muli:wght@200;300;400;500;6
 }
 
 .my-nav{
-     background-color: : transparent;
+     background-color:  transparent;
 }
  footer {
      display: inline-flex;
@@ -183,5 +228,10 @@ option.test:hover{
 .prime-line{
      border-bottom: solid;
      border-bottom-color: #8da0d6;
+}
+
+.social-icon img{
+     width: 30px;
+     height: 30px;
 }
 

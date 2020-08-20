@@ -24,28 +24,29 @@
                         <h1>Sign Up</h1>
                      </div>
                   <!---message popup-->
-            
-                  <% if(locals.message){ %>
-                     <h4>Test</h4>
-                     <h4 class = "alert alert-danger mt-2">test<%= message %></h4>
+                     
+                  <% if(message){ %>   
+                     <p class = "alert alert-danger mt-2"><%= message %></p>
+                 <% } else if (success) {%>
+                  <p class = "alert alert-success mt-2"><%= success %></p>
                  <% } %>
 
                      <div class="flex-column">
                      <p>I'm a</p>
-                     <div class="form-group ">
-                         <select class="form-control box-shadow" id="role" name = "role" >
-                         <option>Fashionista</option>
-                         <option>Consultant</option>
-                         <option>Manufacturer</option>   
-                         <option>Supplier</option>               
-                            </select>
-                     </div>
-                     </div>
+                      <div class="form-group ">
+                      <select class="form-control box-shadow" id="role" name = "role" >
+                      <option>Fashionista</option>
+                      <option>Consultant</option>
+                      <option>Manufacturer</option>   
+                      <option>Supplier</option>               
+                         </select>
+                      </div>
+                     </div>   
 
                         <div class="form-group">
                         <label class="mb-1">Username</label>
                         <div class="position-relative icon-form-control">
-                          <input id ="name" name="name" type="text" class="form-control box-shadow">
+                          <input id ="name" name="name" type="text" class="form-control box-shadow" required>
                         </div>
                         </div>
 
@@ -53,28 +54,29 @@
                            <label class="mb-1">Email or Phone</label>
                            <div class="position-relative icon-form-control">
                               <i class="mdi mdi-account position-absolute"></i>
-                              <input id = "email" name="email" type="email" class="form-control box-shadow">
+                              <input id = "email" name="email" type="email" class="form-control box-shadow" required>
                            </div>
                         </div>
 
                         <div class="form-group">
                            <label class="mb-1">Password</label>
                            <div class="position-relative icon-form-control">
-                              <input id ="pass" name="pass" type="password" class="form-control box-shadow">
+                              <input id ="pass" name="pass" type="password" class="form-control box-shadow"required>
                            </div>
                         </div>
                        
-                        <div class="custom-control custom-checkbox mb-3">
-                           <input type="checkbox" class="custom-control-input" id="customCheck1">
+                       
+                        <div class="form-check">
+                           <input type="checkbox" class="form-check-input" id="customCheck1" required>
                            <div class="w-300" >
-                           <label class="custom-control-label" for="customCheck1 ">I agree to receive newa, Updates, and marketing offers, Read more in <a href="#">Privacy Notice</a></label>
+                           <label class="from-check-label" for="customCheck1 ">I agree to receive newa, Updates, and marketing offers, Read more in <a href="#">Privacy Notice</a></label>
                            </div>
                         </div>
 
-                        <div class="custom-control custom-checkbox mb-3">
-                           <input type="checkbox" class="custom-control-input" id="customCheck1">
+                        <div class="form-check">
+                           <input type="checkbox" class="form-check-input" id="customCheck2" required>
                            <div class="w-300" >
-                           <label class="custom-control-label" for="customCheck1 ">I have read and agree to <a href="#">Terms and conditions</a> and <a href="#">Privacy Policy</a></label>
+                           <label class="from-check-label" for="customCheck2 ">I have read and agree to <a href="#">Terms and conditions</a> and <a href="#">Privacy Policy</a></label>
                            </div>
                         </div>
 
@@ -85,10 +87,10 @@
                            <h5>Or Sign Up With</h5>
                            <div class="row">
                               <div class="col-6">
-                                 <button type="button" class="btn btn-outline-instagram btn-block"><i class="mdi mdi-instagram"></i> Instagram</button>
+                                 <button type="button" class="btn btn-block social-icon "><img src="/assets/images/faimages/Facebook.png"></button>
                               </div>
                               <div class="col-6">
-                                 <button type="button" class="btn btn-outline-facebook btn-block"><i class="mdi mdi-facebook"></i> Facebook</button>
+                                 <button type="button" class="btn btn-block social-icon"><img src="/assets/images/faimages/instagram.png"></button>
                               </div>
                            </div>
                         </div>
@@ -108,110 +110,7 @@
      
       <!-- End Login -->
 
-
-        <!--   footer -->
-      <footer class="bg-primcolor-p">
-         <div class="container">
-
-            <div class=" d-flex">
-               <div class="footer-list">
-                  <h2>Company</h2>
-                  <ul class="list">
-                     <li><a href="#">About us</a></li>
-                     <li><a href="#">Privacy Policy</a></li>
-                     <li><a href="#">Cookie Policy</a></li>
-                     <li><a href="#">Terms &amp; Conditions</a></li>
-                     <li><a href="#">Refund policy</a></li>
-                  </ul>
-               </div>
-               <div class="footer-list">
-                  <h2>Resources</h2>
-                  <ul class="list">
-                     <li><a href="#">Lorem ipsum</a></li>
-                     <li><a href="#">Lorem ipsum</a></li>
-                     <li><a href="#">Lorem ipsum</a></li>
-                     <li><a href="#">Lorem ipsum</a></li>
-                     <li><a href="#">Lorem ipsum</a></li>
-                    
-                  </ul>
-               </div>
-               <div class="footer-list">
-                  <h2>Services</h2>
-                  <ul class="list">
-                     <li><a href="#">Lorem ipsum</a></li>
-                     <li><a href="#">Lorem ipsum</a></li>
-                     <li><a href="#">Lorem ipsum</a></li>
-                     <li><a href="#">Lorem ipsum</a></li>
-                     <li><a href="#">Lorem ipsum</a></li>
-                     
-                  </ul>
-               </div>
-               <div class="footer-list">
-                  <h2>Contact Us</h2>
-                  <ul class="list">
-                    <li><a href="#">Lorem ipsum</a></li>
-                     <li><a href="#">Lorem ipsum</a></li>
-                     <li><a href="#">Lorem ipsum</a></li>
-                     <li><a href="#">Lorem ipsum</a></li>
-                     <li><a href="#">Lorem ipsum</a></li>
-                     </li>
-                  </ul>
-               </div>     
-            </div>
-
-            <div class="copyright">
-               <div class="logo">
-                  <a href="index.html">
-                  <img src="assets/images/logo_fashop.png">
-                  </a>
-               </div>
-               <p>© Copyright 2020 Fashop.io All Rights Reserved
-               </p>
-               <ul class="social">
-                    <li>
-                     <p style="padding-right: 10px">Follow us</p>
-                  </li> 
-                  <li>
-                     <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                  </li>
-                  <li>
-                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                  </li>
-                  <li>
-                     <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                  </li>
-                  <li>
-                     <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                  </li>
-                  <li>
-                     <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                  </li>
-               </ul>
-            </div>
-
-         </div>
-      </footer>
-      <!--       footer-->
-   
-
-
-
-
-
-      <!-- Bootstrap core JavaScript -->
-      <script src="vendor/jquery/jquery.min.js"></script>
-      <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-      <!-- Contact form JavaScript -->
-      <!-- Do not edit these files! In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
-      <script src="js/jqBootstrapValidation.js"></script>
-      <script src="js/contact_me.js"></script>
-      <!-- Slick -->
-      <script src="vendor/slick-master/slick/slick.js" type="text/javascript" charset="utf-8"></script>
-      <!-- lightgallery -->
-      <script src="vendor/lightgallery-master/dist/js/lightgallery-all.min.js"></script>
-      <!-- select2 Js -->
-      <script src="vendor/select2/js/select2.min.js"></script>
-      <!-- Custom -->
-      <script src="js/custom.js"></script>
+      <%- include('../partials/footer.ejs') -%>
+       
    </body>
 </html>

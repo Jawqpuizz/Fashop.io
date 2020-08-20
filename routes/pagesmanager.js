@@ -8,8 +8,16 @@
  });
 
  route.get('/register',(req,res) =>{
-    res.render('pages/register');
+    res.render('pages/register',{
+       message: '',success:''
+    });
  });
+
+ route.get('/login',(req,res) =>{
+   res.render('pages/login',{
+      message: ''
+   });
+});
 
 // don't forget to export otherwise pages won't render
 module.exports = route;

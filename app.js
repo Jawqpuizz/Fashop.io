@@ -1,6 +1,7 @@
 const express = require('express');
 const mysql = require('mysql');
 const dotenv = require('dotenv');
+const bodyPaser = require('body-parser');
 
 
 // because we store the password and all the sensitive data to another file
@@ -18,7 +19,7 @@ const db = mysql.createConnection({
 //connect here
 db.connect((err) =>{
     if(err) throw err;
-    console.log('Database Connected')
+    console.log('Database Connected');
 
 });
 
@@ -26,7 +27,7 @@ db.connect((err) =>{
 app.use(express.static(__dirname+'/public'));
 
 // Parse URL-encoded bodies (as sent by HTML forms)
-app.use(express.urlencoded({extended: false}));
+app.use(bodyPaser.urlencoded({extended: true}));
 app.set('views',(__dirname+'/views'));
 //
 app.set('view engine', 'ejs');
