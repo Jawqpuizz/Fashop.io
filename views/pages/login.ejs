@@ -1,31 +1,31 @@
-<!DOCTYPE html>
-<html>
-   
-   <body>
 
-      <header>
+   <!DOCTYPE html>
+   <html>
+      
+
+ 
          <%- include('../partials/header') -%>
-      </header>
+     
 
-      <!-- Login -->
+      <!-- Login section -->
       
       <section class="py-5 homepage-search-block position-relative">
          <div class="container">
             <div class="row py-lg-5">
                <div class="col-lg-5">
-                  <img class="img-fluid" src="/assets/images/faimages/title-image2.jpeg" alt='' />
+                  <img class="img-fluid" src="/assets/images/title-image2.jpeg" alt='' />
                </div>
 
                <!--Sigup form in the left side-->
-                  <div class="offset-2"> <!--offset = margin-left-->
+                  <div class="offset-2 ml-5 pl-5"> <!--offset = margin-left-->
 
                      <form action="/action/login" method ="POST">
-                     <div class="text-center">
-                        <h1>Log In</h1>
-                     </div>
+                  
+                        <h1 class="lg-text text-center">Log in.</h1>
+                    
                   <!---message popup-->
                      
-                  <% if(message){ %>   
+                  <% if(message != ""){ %>   
                      <p class = "alert alert-danger mt-2"><%= message %></p>
                  <% } %>
 
@@ -35,35 +35,45 @@
                            <label class="mb-1">Email</label>
                            <div class="position-relative icon-form-control">
                               <i class="mdi mdi-account position-absolute"></i>
-                              <input id = "email" name="email" type="email" class="form-control box-shadow" required>
+                              <input id = "email" name="email" type="email" class="form-control box-shadow box-decor" required>
                            </div>
                         </div>
 
                         <div class="form-group">
                            <label class="mb-1">Password</label>
                            <div class="position-relative icon-form-control">
-                              <input id ="pass" name="pass" type="password" class="form-control box-shadow"required>
+                              <input id ="pass" name="password" type="password" class="form-control box-shadow box-decor"required>
                            </div>
                         </div>
                        
-                       
-                        
-                        <div class="text-center mt-3 prime-line pb-3">
-                        <button class="btn btn-success btn-xs btn-radius" type="submit"> log in </button>
+                        <div class="form-check">
+                           <input type="checkbox" class="form-check-input" id="rememberMe" required>
+                           <div class="w-300 " >
+                           <label class="from-check-label" for="rememberMe "><h5>Remember Me.</h5> </label>
+                           </div>
                         </div>
-                        <div class="text-center mt-3 pb-3">
-                           <h5>Or log in With</h5>
+                        
+                        <div class="text-center mt-3">
+                        <button class="btn btn-success-b btn-md btn-radius" type="submit"> Log in. </button>
+
+                        <div class="mt-3 prime-line pb-2"></div>
+                        </div>
+
+                        
+                        <div class="text-center mt-5 pb-3">
+                           <h3><b>Or Log In With</b></h3>
                            <div class="row">
                               <div class="col-6">
-                                 <button type="button" class="btn btn-block social-icon "><img src="/assets/images/faimages/Facebook.png"></button>
+                                 <a class="btn btn-block social-icon " href="/auth/facebook" role="button"><img src="/assets/images/facebook.png"></a>
                               </div>
+                     
                               <div class="col-6">
-                                 <button type="button" class="btn btn-block social-icon"><img src="/assets/images/faimages/instagram.png"></button>
+                                 <a class="btn btn-block social-icon " href="/auth/google" role="button"><img src="/assets/images/google.png"></a>
                               </div>
                            </div>
                         </div>
-                        <div class="py-3 d-flex align-items-center">
-                           <p>Don't have an Fashionista account? <a href="#"> Sign up</a></p>
+                        <div class="text-center mt-3">
+                           <h6>Don't have an account? <a href="/register"> Sign up</a></h6>
                           
                         </div>
                      </form>

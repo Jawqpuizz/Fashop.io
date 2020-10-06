@@ -1,23 +1,23 @@
 <!DOCTYPE html>
 <html>
    
-   <body>
+  
 
-      <header>
+     
          <%- include('../partials/header') -%>
-      </header>
+    
 
       <!-- Login -->
       
-      <section class="py-5 homepage-search-block position-relative">
+      <section class="">
          <div class="container">
             <div class="row py-lg-5">
                <div class="col-lg-5">
-                  <img class="img-fluid" src="/assets/images/faimages/title-image2.jpeg" alt='' />
+                  <img class="img-fluid" src="/assets/images/title-image2.jpeg" alt='' />
                </div>
 
                <!--Sigup form in the left side-->
-                  <div class="offset-2"> <!--offset = margin-left-->
+                  <div class="offset-md-1"> 
 
                      <form action="/action/register" method ="POST">
                      <div class="text-center">
@@ -25,16 +25,15 @@
                      </div>
                   <!---message popup-->
                      
-                  <% if(message){ %>   
+                  <% if(message != ""){ %>   
                      <p class = "alert alert-danger mt-2"><%= message %></p>
-                 <% } else if (success) {%>
-                  <p class = "alert alert-success mt-2"><%= success %></p>
                  <% } %>
 
-                     <div class="flex-column">
+                     <div class="flex-column ">
                      <p>I'm a</p>
                       <div class="form-group ">
                       <select class="form-control box-shadow" id="role" name = "role" >
+                     <option selected disabled>--Select One--</option>
                       <option>Fashionista</option>
                       <option>Consultant</option>
                       <option>Manufacturer</option>   
@@ -43,12 +42,6 @@
                       </div>
                      </div>   
 
-                        <div class="form-group">
-                        <label class="mb-1">Username</label>
-                        <div class="position-relative icon-form-control">
-                          <input id ="name" name="name" type="text" class="form-control box-shadow" required>
-                        </div>
-                        </div>
 
                         <div class="form-group">
                            <label class="mb-1">Email or Phone</label>
@@ -61,7 +54,7 @@
                         <div class="form-group">
                            <label class="mb-1">Password</label>
                            <div class="position-relative icon-form-control">
-                              <input id ="pass" name="pass" type="password" class="form-control box-shadow"required>
+                              <input id ="pass" name="password" type="password" class="form-control box-shadow"required>
                            </div>
                         </div>
                        
@@ -81,21 +74,21 @@
                         </div>
 
                         <div class="text-center mt-3 prime-line pb-3">
-                        <button class="btn btn-success btn-xs btn-radius" type="submit"> Register Now </button>
+                        <button class="btn btn-success-b btn-xs btn-radius" type="submit"> Register Now </button>
                         </div>
                         <div class="text-center mt-3 pb-3">
                            <h5>Or Sign Up With</h5>
                            <div class="row">
                               <div class="col-6">
-                                 <button type="button" class="btn btn-block social-icon "><img src="/assets/images/faimages/Facebook.png"></button>
+                                 <a class="btn btn-block social-icon " href="/auth/facebook" role="button"><img src="/assets/images/facebook.png"></a>
                               </div>
                               <div class="col-6">
-                                 <button type="button" class="btn btn-block social-icon"><img src="/assets/images/faimages/instagram.png"></button>
+                                 <a class="btn btn-block social-icon " href="/auth/google" role="button"><img src="/assets/images/google.png"></a>
                               </div>
                            </div>
                         </div>
                         <div class="py-3 d-flex align-items-center">
-                           <p>Already have an Fashionista account? <a href="#"> Log in</a></p>
+                           <p>Already have an Fashionista account? <a href="/login"> Log in</a></p>
                           
                         </div>
                      </form>
