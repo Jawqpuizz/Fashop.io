@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+   
+  
+
+     
+         <%- include('../partials/header') -%>
+    
+
+      <!-- Login -->
+      
+      <section class="">
+         <div class="container">
+            <div class="row py-lg-5">
+               <div class="col-lg-5">
+                  <img class="img-fluid" src="/assets/images/title-image2.jpeg" alt='' />
+               </div>
+
+               <!--Sigup form in the left side-->
+                  <div class="offset-md-1"> 
+
+                     <form action="/action/register" method ="POST">
+                     <div class="text-center">
+                        <h1>Sign Up</h1>
+                     </div>
+                  <!---message popup-->
+                     
+                  <% if(message != ""){ %>   
+                     <p class = "alert alert-danger mt-2"><%= message %></p>
+                 <% } %>
+
+                     <div class="flex-column ">
+                     <p>I'm a</p>
+                      <div class="form-group ">
+                      <select class="form-control box-shadow" id="role" name = "role" >
+                     <option selected disabled>--Select One--</option>
+                      <option>Fashionista</option>
+                      <option>Consultant</option>
+                      <option>Manufacturer</option>   
+                      <option>Supplier</option>               
+                         </select>
+                      </div>
+                     </div>   
+
+
+                        <div class="form-group">
+                           <label class="mb-1">Email or Phone</label>
+                           <div class="position-relative icon-form-control">
+                              <i class="mdi mdi-account position-absolute"></i>
+                              <input id = "email" name="email" type="email" class="form-control box-shadow" required>
+                           </div>
+                        </div>
+
+                        <div class="form-group">
+                           <label class="mb-1">Password</label>
+                           <div class="position-relative icon-form-control">
+                              <input id ="pass" name="password" type="password" class="form-control box-shadow"required>
+                           </div>
+                        </div>
+                       
+                       
+                        <div class="form-check">
+                           <input type="checkbox" class="form-check-input" id="customCheck1" required>
+                           <div class="w-300" >
+                           <label class="from-check-label" for="customCheck1 ">I agree to receive newa, Updates, and marketing offers, Read more in <a href="#">Privacy Notice</a></label>
+                           </div>
+                        </div>
+
+                        <div class="form-check">
+                           <input type="checkbox" class="form-check-input" id="customCheck2" required>
+                           <div class="w-300" >
+                           <label class="from-check-label" for="customCheck2 ">I have read and agree to <a href="#">Terms and conditions</a> and <a href="#">Privacy Policy</a></label>
+                           </div>
+                        </div>
+
+                        <div class="text-center mt-3 prime-line pb-3">
+                        <button class="btn btn-success-b btn-xs btn-radius" type="submit"> Register Now </button>
+                        </div>
+                        <div class="text-center mt-3 pb-3">
+                           <h5>Or Sign Up With</h5>
+                           <div class="row">
+                              <div class="col-6">
+                                 <a class="btn btn-block social-icon " href="/auth/facebook" role="button"><img src="/assets/images/facebook.png"></a>
+                              </div>
+                              <div class="col-6">
+                                 <a class="btn btn-block social-icon " href="/auth/google" role="button"><img src="/assets/images/google.png"></a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="py-3 d-flex align-items-center">
+                           <p>Already have an Fashionista account? <a href="/login"> Log in</a></p>
+                          
+                        </div>
+                     </form>
+
+                  </div>
+               </div>
+
+
+            </div>
+         </div><!--end right-->
+      </section>
+     
+      <!-- End Login -->
+
+      <%- include('../partials/footer.ejs') -%>
+       
+   </body>
+</html>
